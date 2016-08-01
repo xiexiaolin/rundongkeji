@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  Demo
+//
+//  Created by 梅启元 on 16/8/1.
+//  Copyright © 2016年 薛晓林. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+
+//尺寸
+#define __kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define __kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//模型数据
+#define __KPropertyString(key) @property(nonatomic,copy)NSString <Optional>*key;
+
+
+#endif
+
+#endif /* PrefixHeader_pch */
+
+
